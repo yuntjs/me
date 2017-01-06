@@ -2,22 +2,29 @@
 <html>
   <head>
     <title>Aboutme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <%= google_webfonts_init(
+      {
+        google: ['Pacifico','Open Sans','Anton','Francois One','Noticia Text']
+      }
+    ) %>
   </head>
 
   <body>
     <header>
       <nav>
-        <ul class="nav-ul">
-          <li class="nav-li">Tae</li>
-          <li class="nav-li">Story</li>
-          <li class="nav-li">Portfolio</li>
-          <li class="nav-li">Contact</li>
-        </ul>
+        <div class="nav-div">
+          <ul class="nav-ul">
+            <li class="nav-li active"><a href="#part-1">Tae</a></li>
+            <li class="nav-li"><a href="#part-2">Story</a></li>
+            <li class="nav-li"><a href="#part-3">Aspiration</a></li>
+            <li class="nav-li"><a href="#part-4">Portfolio</a></li>
+            <li id="contact-li" class="nav-li"><a href="#part-5">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <%= yield %>
