@@ -1,0 +1,38 @@
+html,body {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  background-color: #171717;
+  margin-top: -20px;
+  position: fixed;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.section-content{
+  margin: 0 auto;
+  width: 720px;
+  padding: 300px 200px 0px 200px;
+
+  text-align: center;
+}
+
+.parallax-window {
+    min-height: 700px;
+    background: transparent;
+}
+
+.blue {
+  background-color: #26547C;
+}
+
+#part-1{
+  margin-top: 0;
+
+}

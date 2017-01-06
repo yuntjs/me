@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aboutme</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-ul">
+          <li class="nav-li">Tae</li>
+          <li class="nav-li">Story</li>
+          <li class="nav-li">Portfolio</li>
+          <li class="nav-li">Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <%= yield %>
+  </body>
+</html>
