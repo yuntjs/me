@@ -32,6 +32,10 @@ nav a {
   font-family: Francois One;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 .nav-li {
   text-decoration: none;
   text-align: center;
@@ -115,4 +119,74 @@ blockquote p {
 blockquote footer {
   font-family: Francois One;
   font-size: 20px;
+  color: #171717;
+}
+
+.tedtalklink{
+  text-decoration: none;
+  font-family: Noticia Text;
+  font-style: italic;
+  color: #FF5656;
+}
+
+.tedtalklink:hover{
+  color: white;
+}
+
+.projects{
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project{
+  width: 310px;
+}
+
+.project-description{
+  text-align: center;
+}
+
+.paragraph{
+  font-family: Noticia Text;
+}
+
+img.project-img{
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.title{
+  font-family: Noticia Text;
+  font-size: 24px;
+  color: #FF5D73;
+}
+
+.project-description{
+  font-family: Noticia Text;
+}
+
+.contact-i{
+  margin-top: 20px;
+}
+
+.contact-icon {
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: inline-block;
+}
+
+.contact-icon a {
+  color: white;
+}
+
+.email {
+  font-family: Noticia Text;
+  font-size: 18px;
+  margin-top: 50px;
 }
