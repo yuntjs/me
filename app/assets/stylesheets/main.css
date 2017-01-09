@@ -13,7 +13,7 @@ nav {
   position: fixed;
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
-  z-index: 10000;s
+  z-index: 10000;
 }
 
 nav ul {
