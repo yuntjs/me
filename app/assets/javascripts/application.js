@@ -11,38 +11,15 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require parallax.min
 //= require_tree .
 
 $(document).ready(function() {
-  // function offsetAnchor() {
-  //     if(location.hash.length !== 0) {
-  //         window.scrollTo(window.scrollX, window.scrollY + 20);
-  //     }
-  // }
-  // window.addEventListener("hashchange", offsetAnchor);
-  // // window.setTimeout(offsetAnchor, 1);
-  //
-  // $("a").on('click', function(event) {
-  //   // Make sure this.hash has a value before overriding default behavior
-  //   if (this.hash !== "") {
-  //     // Prevent default anchor click behavior
-  //     event.preventDefault();
-  //     // Store hash
-  //     var hash = this.hash, $hash = $(this.hash);
-  //     var targetOffSet = $hash.offset().top + 20;
-  //     // Using jQuery's animate() method to add smooth page scroll
-  //     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-  //     $('html, body').animate({scrollTop: targetOffSet}, 1000, function(){
-  //       // Add hash (#) to URL when done scrolling (default click behavior)
-  //       // window.location.hash = hash;
-  //     });
-  //   } // End if
-  // });
-  $(document).on("scroll", onScroll);
 
+  $(document).on("scroll", onScroll);
   //smoothscroll
   $('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
@@ -62,8 +39,7 @@ $(document).ready(function() {
           $(document).on("scroll", onScroll);
       });
   });
-
-
+  new Main().initialize();
 });
 
 function onScroll(event){

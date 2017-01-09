@@ -25,7 +25,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'skrollr-rails'
 gem 'jquery-turbolinks'
-gem 'google-webfonts-rails'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem "font-awesome-rails"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
