@@ -191,11 +191,50 @@ img.project-img{
   margin-top: 50px;
 }
 
-@media only screen and (max-width: 550px)  {
-  html,body {
-    /*width: 100%;*/
+@media only screen and (min-width:551px) and (max-width: 960px)  {
+  .section-container {
+    width: 95%;
   }
 
+  .section-container-begin {
+    width: 90%;
+  }
+
+  .section-content {
+    width: 90%;
+  }
+  .section-content h2 {
+    margin-top: 0;
+  }
+  .p-content {
+    font-size: 18px;
+  }
+  blockquote p {
+    font-size: 24px;
+  }
+  blockquote footer {
+    font-size: 24px;
+  }
+  .projects{
+    display: block;
+    margin: 0 auto;
+  }
+  .project{
+    width: 100%;
+    display: table-caption;
+  }
+  .view {
+   width: 200px;
+   height: 100px;
+  }
+
+  .view .mask, .view .content {
+   width: 200px;
+   height: 100px;
+  }
+}
+
+@media only screen and (max-width: 550px)  {
   nav {
     display: none;
   }
